@@ -43,7 +43,7 @@ export default function Hero() {
             alt="Gagaan Bhatia"
             fill
             priority
-            sizes="(max-width: 960px) 0px, 340px"
+            sizes="(max-width: 960px) 220px, 340px"
             style={{ objectFit: 'cover', objectPosition: 'center 18%' }}
           />
           <div className="hero-photo-overlay" />
