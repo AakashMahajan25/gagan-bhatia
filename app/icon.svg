@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0A3D1F"/>
+  <text
+    x="32"
+    y="45"
+    text-anchor="middle"
+    font-family="system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif"
+    font-weight="800"
+    font-size="30"
+    letter-spacing="-1"
+    fill="#FFFFFF"
+  >GB<tspan fill="#5EE887">.</tspan></text>
+</svg>
