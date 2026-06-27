@@ -637,7 +637,10 @@ footer {
   font-family: var(--font-syne), 'Syne', sans-serif;
   font-weight: 700; font-size: 15px;
   color: var(--text-light);
+  text-decoration: none;
+  transition: color 0.2s;
 }
+.footer-name:hover { color: var(--teal); }
 .footer-name span { color: var(--teal); }
 .footer-right {
   display: flex; align-items: center; gap: 36px;

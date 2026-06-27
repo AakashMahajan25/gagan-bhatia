@@ -1,9 +1,14 @@
 export default function Footer() {
   return (
     <footer>
-      <div className="footer-name">
+      <a
+        href="https://wa.me/919958302595"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="footer-name"
+      >
         Gagaan Bhatia<span>.</span>
-      </div>
+      </a>
       <div className="footer-right">
         <div className="footer-links">
           <a href="#about">About</a>

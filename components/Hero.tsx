@@ -9,9 +9,9 @@ export default function Hero() {
 
       {/* Left — main content */}
       <div className="hero-content">
-        <p className="hero-eyebrow">
+        {/* <p className="hero-eyebrow">
           Digital Marketing Specialist · Available for Consulting
-        </p>
+        </p> */}
         <h1>
           Your brand has<br />
           a story. I make<br />
