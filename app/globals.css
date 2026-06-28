@@ -625,6 +625,168 @@ nav.scrolled {
 }
 
 /* =========================================
+   PROOF OF WORK
+   ========================================= */
+.pow {
+  padding: 120px 72px;
+  background: var(--bg);
+}
+.pow-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.pow-header h2 {
+  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-size: clamp(36px, 5vw, 60px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  color: var(--text);
+  margin: 12px 0 16px;
+}
+.pow-sub {
+  color: var(--text-muted);
+  font-size: 15px;
+  max-width: 440px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+.pow-clients {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.pow-client {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 44px;
+}
+.pow-client-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  gap: 16px;
+}
+.pow-client-header h3 {
+  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.pow-client-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+.pow-count {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--teal-dark);
+  background: rgba(94, 232, 135, 0.12);
+  padding: 6px 14px;
+  border-radius: 100px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.pow-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.pow-thumb {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  background: var(--border);
+  padding: 0;
+  display: block;
+}
+.pow-thumb-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 61, 31, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: background 0.22s, opacity 0.22s;
+}
+.pow-thumb:hover .pow-thumb-overlay {
+  background: rgba(10, 61, 31, 0.6);
+  opacity: 1;
+}
+
+/* Lightbox */
+.pow-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.pow-lb-img {
+  position: relative;
+  width: 80vw;
+  height: 80vh;
+  flex-shrink: 0;
+}
+.pow-lb-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.2s;
+}
+.pow-lb-close:hover { background: rgba(255, 255, 255, 0.2); }
+.pow-lb-nav {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+.pow-lb-nav:hover { background: rgba(255, 255, 255, 0.2); }
+.pow-lb-counter {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  pointer-events: none;
+}
+
+/* =========================================
    FOOTER
    ========================================= */
 footer {
@@ -684,6 +846,7 @@ footer {
   .hero { padding: 140px 48px 100px; gap: 32px; }
   .about { padding: 120px 48px; }
   .work { padding: 100px 48px; }
+  .pow { padding: 100px 48px; }
   .industries { padding: 100px 48px; }
   .contact { padding: 120px 48px; }
   footer { padding: 36px 48px; }
@@ -738,6 +901,13 @@ footer {
   .work-top { flex-direction: column; align-items: flex-start; gap: 16px; margin-bottom: 44px; }
   .more-note { text-align: left; }
   .work-grid { grid-template-columns: 1fr; }
+  .pow { padding: 72px 24px; }
+  .pow-header { margin-bottom: 48px; }
+  .pow-client { padding: 24px; }
+  .pow-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .pow-client-header { flex-direction: column; gap: 10px; }
+  .pow-lb-img { width: 92vw; height: 55vh; }
+  .pow-lb-nav { width: 40px; height: 40px; }
   .industries { padding: 72px 24px; }
   .contact { grid-template-columns: 1fr; padding: 72px 24px; gap: 48px; }
   footer { padding: 32px 24px; flex-direction: column; gap: 20px; text-align: center; }
