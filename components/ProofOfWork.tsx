@@ -11,9 +11,13 @@ interface Client {
 }
 
 const clients: Client[] = [
-  { name: 'Nirmal Lehenga House', slug: 'nirmal-lehenga-house', count: 40, label: 'Social media campaigns & Meta ads — Aug 2023 to Jan 2024' },
-  { name: 'The Graphic Ghar', slug: 'graphic-ghar', count: 7, label: 'Social media management — Jan to May 2023' },
-  { name: 'Royal Daart', slug: 'royal-daart', count: 6, label: 'Digital marketing & paid campaigns' },
+  { name: 'Nirmal Lehenga House', slug: 'nirmal-lehenga-house', count: 24, label: 'Social media campaigns & Meta ads — Aug 2023 to Jan 2024' },
+  { name: 'The Graphic Ghar', slug: 'graphic-ghar', count: 13, label: 'Social media management — Jan to May 2023' },
+  { name: 'Tritiya Gold & Diamond Jewels', slug: 'tritiya-jewels', count: 3, label: 'Paid campaign infrastructure — Jul to Aug 2025' },
+  { name: 'Sidharth and Disha', slug: 'sidharth-disha', count: 5, label: 'Digital marketing strategy — Feb to Mar 2025' },
+  { name: 'Bhartismakeupandstylingstudio', slug: 'bharti-makeup-styling', count: 9, label: 'Digital marketing & content — Feb to May 2024' },
+  { name: 'Lenseyezia Productions & Socialsviluppo', slug: 'lenseyezia-productions', count: 5, label: 'Social media & Meta advertising — Aug 2025 to Present' },
+  { name: 'Certifications', slug: 'certifications', count: 6, label: 'Courses & certifications' },
 ]
 
 const PREVIEW = 8

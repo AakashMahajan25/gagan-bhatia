@@ -26,6 +26,7 @@ export default function Nav() {
         <ul className="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#work">Work</a></li>
+          <li><a href="#proof-of-work">Results</a></li>
           <li><a href="#industries">Industries</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -41,6 +42,7 @@ export default function Nav() {
       <div className={`mobile-nav ${menuOpen ? 'open' : ''}`}>
         <a href="#about"      onClick={close}>About</a>
         <a href="#work"       onClick={close}>Work</a>
+        <a href="#proof-of-work" onClick={close}>Results</a>
         <a href="#industries" onClick={close}>Industries</a>
         <a href="#contact"    onClick={close}>Contact</a>
       </div>
